@@ -21,3 +21,10 @@ lms = np.random.uniform(low=-10.0, high=10.0, size=(2, num_lms))
 
 dt = 0.1
 tf = 20.0
+
+#UKF Params
+kappa = 4.0
+alpha = 0.4
+beta = 2.0
+n = 7 #dimension of augmented state
+lamb = alpha**2 * (n + kappa) - n
